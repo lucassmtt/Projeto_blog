@@ -7,12 +7,15 @@
 }
 
 body{
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(100, 100, 100);
     width: 100vw;
 }
 
+main{
+    width: 100vw;
+}
 header{
-    background-color: #f7b600;
+    background-color:;
     text-align: center;
     padding-bottom: 30px;
     width: 99vw;
