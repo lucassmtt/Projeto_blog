@@ -1,0 +1,20 @@
+@chaset "UTF-8";
+
+@media screen and (min-width:992px){
+
+    img#img1{
+        padding-left: 50px;
+    }
+    
+    p{
+        min-width: 700px;
+        padding-left: 50px;
+        text-indent: 30px;
+    }
+
+    div#fotopq{
+        background-image: url(../../imagens/imagem4.jpg);
+        transform: translateX(150px);
+    }
+}
+

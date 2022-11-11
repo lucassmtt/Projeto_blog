@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet" />
+    <link rel="stylesheet" href="estilos_css/style.css">
+    <link rel="stylesheet" href="estilos_css/query.css">
+</head>
+<body onresize="mudoutam()">
+    <main>
+        <header>
+            <h1 style="display: inline-block;" id="H1_1">Tec</h1><h1 style="display: inline-block;" id="H1_2">Blog</h1> <br>
+            <span id="ham" class="material-symbols-outlined" onclick="abrirhg()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="#" onclick="fake()">Home</a></li>
+                    <li><a href="#" onclick="fake()">Jogos</a></li>
+                    <li><a href="#" onclick="fake()">Celulares</a></li>
+                    <li><a href="#" onclick="fake()">Informática</a></li>
+                    <li><a href="#" onclick="fake()">Eletrônicos</a></li>
+                </ul>
+            </menu>
+        </header>
+        <article>
+            <h2>Título da postagem</h2>
+            <picture class="foto">
+                <source media="(min-width: 862px)" srcset="../imagens/imagem2.jpg" type="image/jpg" >
+                <img src="../imagens/imagem2_pq.png" alt="Imagem de mesa com alguns aparelhos tecnológicos." id="img1">
+            </picture>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ullam qui nulla voluptatem illum tempora doloremque aliquid officia quas! Expedita, aliquam voluptas. Officiis repellendus nesciunt suscipit molestias nihil! Beatae, quasi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error provident unde impedit quam voluptas beatae necessitatibus accusantium incidunt iste! Sint harum eius hic obcaecati ipsum qui magni dolor quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nihil, quam fugiat, doloremque quas esse tempora commodi aspernatur dolore ipsam accusamus ducimus, iusto porro error quasi ex odio sint. Eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi architecto ut eius sequi recusandae vitae, alias quia illo expedita doloremque saepe repudiandae temporibus cum totam! Asperiores rerum aut voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dolor. Illum doloremque repellat obcaecati hic laudantium officiis voluptas deserunt nesciunt nam enim, quibusdam laboriosam, odio fugiat illo, ea eum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi architecto ut eius sequi recusandae vitae, alias quia illo expedita doloremque saepe repudiandae temporibus cum totam! Asperiores rerum aut voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dolor. Illum doloremque repellat obcaecati hic laudantium officiis voluptas deserunt nesciunt nam enim, quibusdam laboriosam, odio fugiat illo, ea eum reiciendis.</p>
+            <h2 id="dois">Título da postagem</h2>
+            <picture class="foto">
+                <div id="fotopq">
+                </div>
+            </picture>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi architecto ut eius sequi recusandae vitae, alias quia illo expedita doloremque saepe repudiandae temporibus cum totam! Asperiores rerum aut voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dolor. Illum doloremque repellat obcaecati hic laudantium officiis voluptas deserunt nesciunt nam enim, quibusdam laboriosam, odio fugiat illo, ea eum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi architecto ut eius sequi recusandae vitae, alias quia illo expedita doloremque saepe repudiandae temporibus cum totam! Asperiores rerum aut voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dolor. Illum doloremque repellat obcaecati hic laudantium officiis voluptas deserunt nesciunt nam enim, quibusdam laboriosam, odio fugiat illo, ea eum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi architecto ut eius sequi recusandae vitae, alias quia illo expedita doloremque saepe repudiandae temporibus cum totam! Asperiores rerum aut voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dolor. Illum doloremque repellat obcaecati hic laudantium officiis voluptas deserunt nesciunt nam enim, quibusdam laboriosam, odio fugiat illo, ea eum reiciendis.</p>
+        </article>
+        <footer>
+            <p id="pf">Criado por <a href="https://github.com/lucassmtt" target="_blank">Lucas Motta</a></p>
+        </footer>
+    </main>
+    <script>
+        function abrirhg(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudoutam(){
+            if (windou.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none' 
+            }
+        }
+
+        function fake(){
+            window.alert('Este site é apenas um exemplo de uma aplicação. Para mais informações, consulte o desenvolvedor no link: https://github.com/lucassmtt')
+        }
+    </script>
+</body>
+</html>
