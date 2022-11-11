@@ -16,5 +16,10 @@
         background-image: url(../../imagens/imagem4.jpg);
         transform: translateX(150px);
     }
-}
+
+    body{
+        background-repeat: no-repeat;
+
+    }
+} 
 
